@@ -25,9 +25,6 @@ const s = StyleSheet.create({
   inputContainer: {
     marginLeft: 20,
   },
-  inputLabel: {
-    fontWeight: "bold",
-  },
   input: {
     height: 40,
   },
@@ -126,7 +123,7 @@ export default class CreditCardInput extends Component {
 
     return {
       inputStyle: [s.input, inputStyle],
-      labelStyle: [s.inputLabel, labelStyle],
+      labelStyle: labelStyle,
       validColor, invalidColor, placeholderColor,
       ref: field, field,
 
